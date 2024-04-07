@@ -1,9 +1,9 @@
-﻿#!/bin/sh
+#!/bin/sh
 
 echo "请输入验证码密码:"
 read -s captcha
 
-if [ "$captcha" != "000" ]; then
+if [ "$captcha" != "789" ]; then
     echo "验证码密码错误！"
     exit 1
 fi
@@ -30,7 +30,7 @@ iptables-save
 ips=($(hostname -I))
 
 # 下载和安装 Xray
-wget -O /usr/local/bin/xray https://raw.githubusercontent.com/llccool1/llccools4s5/xray
+wget -O /usr/local/bin/xray https://raw.githubusercontent.com/heitaqqq/ss5.sh/main/xray
 chmod +x /usr/local/bin/xray
 
 # 创建 Xray 服务配置
