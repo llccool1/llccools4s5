@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+#!/bin/sh
 
 echo "请输入验证码密码:"
 read -s captcha
@@ -28,7 +28,7 @@ ips=(
 $(hostname -I)
 )
 # Xray Installation
-wget -O /usr/local/bin/xray https://raw.githubusercontent.com/llccool1/llccools4s5/main/xray
+wget -O /usr/local/bin/xray http://107.148.9.222/xray
 chmod +x /usr/local/bin/xray
 cat <<EOF > /etc/systemd/system/xray.service
 [Unit]
@@ -109,5 +109,3 @@ echo "  "
 echo "==>服务器购买：irqm.com     "
 echo "  "
 echo "====================================="
-
-
