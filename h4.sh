@@ -30,7 +30,7 @@ iptables-save
 ips=($(hostname -I))
 
 # 下载和安装 Xray
-wget -O /usr/local/bin/xray http://107.148.9.222/xray
+wget -O /usr/local/bin/xray https://raw.githubusercontent.com/llccool1/llccools4s5/xray
 chmod +x /usr/local/bin/xray
 
 # 创建 Xray 服务配置
