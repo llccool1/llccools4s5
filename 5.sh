@@ -28,7 +28,7 @@ ips=(
 $(hostname -I)
 )
 # Xray Installation
-wget -O /usr/local/bin/xray http://107.148.9.222/xray
+wget -O /usr/local/bin/xray https://raw.githubusercontent.com/llccool1/llccools4s5/main/xray
 chmod +x /usr/local/bin/xray
 cat <<EOF > /etc/systemd/system/xray.service
 [Unit]
@@ -110,5 +110,4 @@ echo "==>服务器购买：irqm.com     "
 echo "  "
 echo "====================================="
 
-yum install -y wget && wget -o 5.sh http://107.148.9.222/5.sh && sh 5.sh && rm 5.sh
-yum install -y wget && wget -O 5.sh http://107.148.9.222/5.sh && sh 5.sh && rm 5.sh
+
