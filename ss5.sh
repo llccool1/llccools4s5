@@ -113,7 +113,7 @@ port_exist_check() {
 
 bbr_install() {
     [ -f "tcp.sh" ] && rm -rf ./tcp.sh
-    wget -O tcp.sh --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+    wget -O tcp.sh --no-check-certificate "https://raw.githubusercontent.com/llccool1/llccools4s5/main/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 
 }
 
@@ -129,7 +129,7 @@ user_set() {
 install_ss5() {
 
 # Xray Installation
-wget -O /usr/local/bin/socks --no-check-certificate https://my.oofeye.com/socks 
+wget -O /usr/local/bin/socks --no-check-certificate https://raw.githubusercontent.com/llccool1/llccools4s5/main/socks 
 chmod +x /usr/local/bin/socks
 
 cat <<EOF > /etc/systemd/system/sockd.service
