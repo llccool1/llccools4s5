@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env bash
+#!/usr/bin/env bash
 
 #====================================================
 #   System Request:Centos 7+ or Ubuntu 20.4+
