@@ -103,7 +103,7 @@ port_exist_check() {
     else
         echo -e "${Error} ${RedBG} 检测到 ${port} 端口被占用，以下为 ${port} 端口占用信息 ${Font}"
         lsof -i:"${port}"
-        echo -e "${OK} ${GreenBG} 5s 后将尝试自动 kill 占用进程 ${Font}"
+        echo -e "${OK} ${GreenBG} 5秒 后将尝试自动 kill 占用进程 ${Font}"
         sleep 5
         lsof -i:"${port}" | awk '{print $2}' | grep -v "PID" | xargs kill -9
         echo -e "${OK} ${GreenBG} kill 完成 ${Font}"
@@ -122,8 +122,8 @@ user_set() {
 	#[[ -z ${user} ]] && user="admin"
 	#read -rp "请设置ss5连接密码。默认:admin）:" passwd
 	#[[ -z ${passwd} ]] && passwd="admin"
-	user="ruoji123"
-	passwd="ruoji123"
+	user="llc"
+	passwd="liu123"
 }
 
 install_ss5() {
